@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.text, .square1, .square2, .rectangle {
+  border: 2px solid blue;
+  width: 100%;
+  height: 100%;
+} 
+body {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 40% 15% 15% 15%;
+  grid-template-rows: 400px 60px;
+  position: relative;
+  left: 200px
+  
+}
+.text {
+  grid-row: 1/3;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: aquamarine;
+  background-image: url('https://img.lovepik.com/original_origin_pic/19/01/08/ddad66434a80585932ab1a347968bdd1.png_wh860.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration-color: red;
+}
+.square1 {
+  grid-column: 2/3;
+  height: 250px;
+  position: relative;
+  top: 40px;
+  background-image: url("https://www.shutterstock.com/image-photo/background-chinese-lanterns-sale-on-600w-778767883.jpg");
+}
+.square2 {
+  height: 250px;
+  position: relative;
+  top: 40px;
+  background-image: url("https://thumbs.dreamstime.com/z/boy-selling-lanterns-street-kampot-cambodia-74552883.jpg");
+  background-size: cover;
+}
+.rectangle {
+  background-image: url("https://thumbs.dreamstime.com/b/hoi-vietnam-march-grandma-selling-lanterns-90986953.jpg");
+  background-size: cover;
+  grid-row: 2/3;
+  grid-column: 2/4;
+  height: 160px;
+  position: relative;
+  bottom: 100px
+  
+}
+

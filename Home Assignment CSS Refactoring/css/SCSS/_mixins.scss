@@ -1,0 +1,22 @@
+@mixin triangle-left-border($width-border: 1px, $height-border: 1px) {
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-right: 100px solid blue;
+}
+
+@mixin triangle-up-border($width-border: 1px, $height-border: 1px) {
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid orange;
+}
+@mixin triangle-down-border($width-border: 1px, $height-border: 1px) {
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid red;
+}
+
+@mixin triangle-right-border($width-border: 1px, $height-border: 1px) {
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid green;
+}

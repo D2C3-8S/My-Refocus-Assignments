@@ -1,0 +1,239 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #f5f5f5;   
+}
+.nav {
+    width: 470px;
+    height: 200px;
+    margin: 5px;
+    border: 3px solid rgb(145, 170, 145);
+}
+.name {
+    width: 240px;
+    height: 35px;
+    margin: 3px;
+    border: 3px solid rgb(145, 170, 145);
+    background-color: rgb(191, 220, 194);
+}
+.info {
+    width: 470px;
+    height: 70px;
+    margin: 5px;
+    border: 3px solid rgb(145, 170, 145);
+}
+.cert {
+    width: 470px;
+    height: 130px;
+    margin: 5px;
+    border: 3px solid rgb(163, 205, 163);
+}
+.links {
+    width: 470px;
+    height: 80px;
+    margin: 5px;
+    border: 3px solid rgb(163, 205, 163);
+}
+.image {
+    width: 470px;
+    height: 350px;
+    margin: 5px;
+    border: 3px solid rgb(163, 205, 163);
+}
+.summary {
+    width: 470px;
+    height: 160px;
+    margin: 5px;
+    border: 3px solid rgb(163, 205, 163);
+}
+.sum2 {
+    display: grid;
+    justify-content: center;
+
+}
+
+.experience {
+    width: 470px;
+    height: 555px;
+    margin: 5px;
+    border: 3px solid rgb(163, 205, 163);
+}
+.ex2 {
+    display: grid;
+    justify-content: center;
+}
+.education {
+    width: 470px;
+    height: 270px;
+    margin: 5px;
+    border: 3px solid rgb(163, 205, 163);
+}
+.edu2 {
+    display: grid;
+    justify-content: center;
+}
+.skills {
+    width: 470px;
+    height: 120px;
+    margin: 5px;
+    border: 3px solid rgb(163, 205, 163);
+}
+.skill2 {
+    display: grid;
+    justify-content: center;
+}
+.languages {
+    width: 470px;
+    height: 105px;
+    margin: 5px;
+    border: 3px solid rgb(163, 205, 163);
+}
+.hobbies {
+    width: 470px;
+    height: 123px;
+    margin: 5px;
+    border: 3px solid rgb(163, 205, 163);
+}
+.hob2 {
+    display: grid;
+    justify-content: center;
+}
+.references {
+    width: 470px;
+    height: 180px;
+    margin: 5px;
+    border: 3px solid rgb(163, 205, 163);
+}
+.ref2 {
+    display: grid;
+    justify-content: center;
+}
+.container{
+    display:grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+
+}
+.name{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.info{
+    position: relative;
+    right: 500px;
+    top: 210px;
+}
+img{
+    border-radius: 50%;
+    height:300px;
+
+}
+.container{
+    display:grid;
+    justify-content: center;
+}
+.column2{
+    margin: 10px;
+    position: relative;
+    left: 50px;
+}
+
+.info1 {
+    background-color: bisque;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.cert1 {
+    background-color: aliceblue;
+    display: grid;
+    justify-content: center;
+}
+.link1{
+    background-color: azure;
+    display: grid;
+    justify-content: center;
+}
+.image{
+    background-color: beige;
+    display:grid;
+    justify-content: center;
+}
+.sum1 {
+    background-color:rgb(223, 229, 235);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.ex1{
+    background-color:rgb(222, 228, 234);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.edu1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232, 225, 216);
+}
+.skill1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+.lang1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 223, 213);
+}
+.hob1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(190, 192, 194);
+}
+.ref1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 238, 239);
+}
+
+* {
+    box-sizing: border-box;
+}
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column1 .column2 {
+    float: left;
+    width: 50%;
+    padding: 12px;
+    height: 1500px;
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+    
+
+

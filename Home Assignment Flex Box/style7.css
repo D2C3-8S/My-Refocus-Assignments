@@ -1,0 +1,33 @@
+.box1 {
+  display: flex;
+  justify-content: center;
+  background-color: lightgreen;
+
+}
+.red-box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+}
+.box3 {
+  display: flex;
+  justify-content: end;
+  background-color: aliceblue;
+}
+.red {
+position: relative;
+left: 250px;
+bottom: 50px;
+}
+.black {
+  position: relative;
+  top: 150px
+}
+.gray {
+  position: relative;
+  left: 250px;
+  top: 100px;
+}
+
+

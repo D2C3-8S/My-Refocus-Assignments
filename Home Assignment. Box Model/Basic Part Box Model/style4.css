@@ -1,0 +1,19 @@
+.outlined{
+  width: 1px;
+  color: gray;
+  padding: 16px;
+  height: 200px;
+  width: 200px;
+
+
+
+}
+
+h1{
+  margin-bottom: 14px;
+}
+p{
+  padding-right: 38px;
+  color: red; 
+}
+
