@@ -1,0 +1,324 @@
+@use 'variables'
+@use 'mixins'
+
+// Break point for bigger screen
+$layout-breakpoint-tablet-up: 1024px
+
+*
+    box-sizing: border-box
+
+body
+    margin: 0
+    font-family: variables.$font-stack
+
+ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+
+    li
+        padding: 1px
+
+a
+    text-decoration: none
+
+header
+    background: variables.$color-blue
+    padding: 0 15px
+
+    nav
+        display: none
+
+    li
+        padding-bottom: 3px
+
+    #header_icons
+        padding-top: 40px
+        padding-bottom: 10px
+        display: flex
+        justify-content: space-between
+        align-content: center
+        flex-wrap: wrap
+
+        #burger_menu
+            height: 40px
+            width: 40px
+            padding: 10px
+            background: url("../images/icons/burger/burger_default.svg") no-repeat center
+            border: 1px solid variables.$color-grey4
+            border-radius: 50%
+
+        #burger_menu:hover
+            background: url("../images/icons/burger/burger_hover.svg") no-repeat center
+            border-color: variables.$color-light-blue
+
+    ul
+        padding-bottom: 10px
+
+    #site_pages
+        margin-right: 60px
+        a
+            color: variables.$color-white
+
+    #site_login
+        display: flex
+        gap: 20px
+
+    #sign_up
+        display: grid
+        align-content: center
+
+        a
+            color: variables.$color-grey4
+            @include mixins.font-style-1
+
+    #button_login
+        color: variables.$color-grey4
+        padding: 16px 20px
+        background: none
+        border: 1px solid variables.$color-grey4
+        border-radius: 40px
+        @include mixins.font-style-1
+
+    #button_login:hover
+        color: variables.$color-light-blue
+        border-color: variables.$color-light-blue
+
+    #button_login:active
+        color: variables.$color-white
+        background: variables.$color-light-blue
+
+main
+    background: variables.$color-white
+    padding: 40px 15px
+    display: flex
+    gap: 20px
+    flex-wrap: wrap
+    align-content: center
+    justify-content: center
+
+    .card
+        aspect-ratio: 16/15
+        width: 100%
+        max-width: 320px
+        position: relative
+
+        button
+            background: none
+            border: none
+
+        .close
+            @include mixins.icon-size
+            display: none
+            margin: 15px
+            padding: 0
+            position: absolute
+            top: 0
+            right: 0
+
+        .news_image
+            width: inherit
+
+            img
+                width: inherit
+                border-radius: 6px
+
+        .caption
+            width: inherit
+            background: variables.$color-grey1
+            padding: 10px 20px
+            position: absolute
+            bottom: 0
+            left: 0
+            border-radius: 0 0 6px 6px
+
+            .done
+                @include mixins.icon-size
+                display: none
+
+            h2
+                margin-top: 3px
+                margin-bottom: 10px
+                color: variables.$color-dark-blue
+                font-size: 15px
+
+            .done_active
+                @include mixins.icon-size
+                display: inline-block
+                background: url("../images/icons/done/done_active.svg") no-repeat center !important
+
+        .card_footer
+            color: variables.$color-grey4
+            font-size: 12px
+            display: flex
+            justify-content: space-between
+            align-content: center
+
+            .date
+                padding: 4px 10px
+                border: 1px solid variables.$color-grey3
+                border-radius: 40px
+
+            .like_container
+                display: flex
+                flex-wrap: wrap
+                align-content: center
+                gap: 4px
+
+                .like_icon
+                    height: inherit
+                    width: 20px
+                    display: inline-block
+                    background: url("../images/icons/like/like_default.svg") no-repeat center
+
+                .like_icon:hover
+                    background: url("../images/icons/like/like_hover.svg") no-repeat center
+
+                .like_active
+                    height: inherit
+                    width: 20px
+                    display: inline-block
+                    background: url("../images/icons/like/like_active.svg") no-repeat center !important
+
+    .card:hover
+        .news_image:after
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            height: 100%
+            width: 100%
+            background: linear-gradient(180deg, #192140 0%, rgba(25, 33, 64, 0) 70.8%)
+            border-radius: 6px
+
+        .close
+            display: inline-block
+            background: url("../images/icons/close/close_default.svg") no-repeat center
+
+        .close:hover
+            background: url("../images/icons/close/close_hover.svg") no-repeat center
+
+        .close:active
+            background: url("../images/icons/close/close_active.svg") no-repeat center
+
+        .done
+            display: inline-block
+            background: url("../images/icons/done/done_default.svg") no-repeat center
+
+        .done:hover
+            background: url("../images/icons/done/done_hover.svg") no-repeat center
+
+footer
+    background: variables.$color-dark-blue
+    padding: 40px 15px
+
+    div
+        margin-bottom: 40px
+
+    ul
+        margin-top: 0
+        margin-bottom: 10px
+        display: flex
+        flex-wrap: wrap
+        column-gap: 10px
+
+    h3
+        margin-top: 0
+        margin-bottom: 10px
+        color: variables.$color-white
+        font-size: 16px
+        font-weight: 700
+
+    h4
+        margin-top: 0
+        margin-bottom: 10px
+        color: variables.$color-grey4
+        font-size: 12px
+        font-weight: 400
+
+    li
+        color: variables.$color-grey2
+        font-size: 12px
+
+    #blog_links
+        margin-bottom: 30px
+
+    #legalities
+        margin-bottom: 0
+
+        ul
+            column-gap: 5px
+
+            li
+                color: variables.$color-grey4
+
+@media (min-width: $layout-breakpoint-tablet-up)
+    header
+        padding: 18px 80px
+        display: flex
+        justify-content: space-between
+
+        #header_icons
+            padding: 0px
+
+        #logo
+            height: 26px
+
+        #burger_menu
+            display: none
+
+        nav
+            display: flex
+
+        ul
+            display: flex
+            align-content: center
+            flex-wrap: wrap
+            gap: 30px
+            padding: 0
+
+    main
+        padding: 40px
+        gap: 40px
+
+        h2
+            font-size: 20px !important
+
+    footer
+        padding: 60px 80px
+        display: grid
+        row-gap: 40px
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr
+
+        div
+            margin-bottom: 0 !important
+
+        ul
+            margin-bottom: 0
+
+        h3
+            margin-bottom: 20px
+
+        #blog_links
+            grid-column: 1/3
+            grid-row: 1/2
+
+            ul
+                display: inline-flex
+
+        #courses_links
+            grid-column: 1/3
+            grid-row: 2/3
+
+        #socials_links
+            grid-column: 3/4
+            grid-row: 1/2
+
+        #legalities
+            grid-column: 3/4
+            grid-row: 2/3
+            display: flex
+            gap: 10px
+            position: relative
+            top: 40px

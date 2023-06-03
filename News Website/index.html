@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Refocus News Website</title>
+</head>
+
+<body>
+  
+  <header>
+    <div class="header-icon">
+      <img src="Assets/icons/Logo.svg" alt="Refocus Logo" class="logo">
+      <button id="burger-menu" onclick="showbuttonMenu()"></button>
+    </div>
+     <nav>
+      <ul class="nav-list" id="menu-bar">
+        <li class="nav-item"><a href="">Blog</a></li>
+        <li class="nav-item"><a href="">Our courses</a></li>
+        <li class="nav-item"><a href="">Free Webinars</a></li>
+        <li class="nav-item"><a href="">Reviews</a></li>
+      </ul>
+
+      <ul class="nav-list" id="site-login">
+        <li class="nav-item" id="sign-up"><a href="">Sign up</a></li>
+        <li class="nav-item"><button id="button-login">Log in</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="boxes">
+      <div class="news-pic">
+        <img src="Assets/pictures/Image-1.png" alt="">
+      </div>
+      <button class="close" id="closeArticle" onclick="articleRemove(event)"></button>
+      <div class="caption">
+        <button class="done" id="markAsread" onclick="readArticle(event)"></button>
+        <h2 class="headline">Front-End vs Back-End Developer: What's the Difference?</h2>
+        <hr>
+        <div class="box-footer">
+          <span class="date">April 29, 2023</span>
+          <div class="like">
+            <span class="like-icon"></span>
+            <span class="like-count">4.5 k</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxes">
+      <div class="news-pic">
+        <img src="Assets/pictures/Image-2.png" alt="">
+      </div>
+      <button class="close" id="closeArticle" onclick="articleRemove(event)"></button>
+      <div class="caption">
+        <button class="done" id="markAsread" onclick="readArticle(event)"></button>
+        <h2 class="headline">What is a Full Stack Developer?</h2>
+        <hr>
+        <div class="box-footer">
+          <span class="date">April 30, 2023</span>
+          <div class="like">
+            <span class="like-icon"></span>
+            <span class="like-count">3.5 k</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxes">
+      <div class="news-pic">
+        <img src="Assets/pictures/Image-3.png" alt="">
+      </div>
+      <button class="close" id="closeArticle" onclick="articleRemove(event)"></button>
+      <div class="caption">
+        <button class="done" id="markAsread" onclick="readArticle(event)"></button>
+        <h2 class="headline">What are Soft Skills and how do they benefit your career?</h2>
+        <hr>
+        <div class="box-footer">
+          <span class="date">May 1, 2023</span>
+          <div class="like">
+            <span class="like-icon"></span>
+            <span class="like-count">4.2 k</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxes">
+      <div class="news-pic">
+        <img src="Assets/pictures/Image-4.png" alt="">
+      </div>
+      <button class="close" id="closeArticle" onclick="articleRemove(event)"></button>
+      <div class="caption">
+        <button class="done" id="markAsread" onclick="readArticle(event)"></button>
+        <h2 class="headline">IT Jobs: In Demand, Available to everyone, ripe with opportunity</h2>
+        <hr>
+        <div class="box-footer">
+          <span class="date">May 2, 2023</span>
+          <div class="like">
+            <span class="like-icon"></span>
+            <span class="like-count">2.5 k</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxes">
+      <div class="news-pic">
+        <img src="Assets/pictures/Image-5.png" alt="">
+      </div>
+      <button class="close" id="closeArticle" onclick="articleRemove(event)"></button>
+      <div class="caption">
+        <button class="done" id="markAsread" onclick="readArticle(event)"></button>
+        <h2 class="headline">Learning tips for Data Science Self-study</h2>
+        <hr>
+        <div class="box-footer">
+          <span class="date">May 1, 2023</span>
+          <div class="like">
+            <span class="like-icon"></span>
+            <span class="like-count">1.6 k</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxes">
+      <div class="news-pic">
+        <img src="Assets/pictures/Image-6.png" alt="">
+      </div>
+      <button class="close" id="closeArticle" onclick="articleRemove(event)"></button>
+      <div class="caption">
+        <button class="done" id="markAsread" onclick="readArticle(event)"></button>
+        <h2 class="headline">Hard Skills vs. Soft Skills:<br>Do you really need both? why?</h2>
+        <hr>
+        <div class="box-footer">
+          <span class="date">May 1, 2023</span>
+          <div class="like">
+            <span class="like-icon"></span>
+            <span class="like-count">2.7 k</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxes">
+      <div class="news-pic">
+        <img src="Assets/pictures/Image-7.png" alt="">
+      </div>
+      <button class="close" id="closeArticle" onclick="articleRemove(event)"></button>
+      <div class="caption">
+        <button class="done" id="markAsread" onclick="readArticle(event)"></button>
+        <h2 class="headline">What is JavaScript</h2>
+        <hr>
+        <div class="box-footer">
+          <span class="date">May 2, 2023</span>
+          <div class="like">
+            <span class="like-icon"></span>
+            <span class="like-count">2.7 k</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxes">
+      <div class="news-pic">
+        <img src="Assets/pictures/Image-8.png" alt="">
+      </div>
+      <button class="close" id="closeArticle" onclick="articleRemove(event)"></button>
+      <div class="caption">
+        <button class="done" id="markAsread" onclick="readArticle(event)"></button>
+        <h2 class="headline">Who is a Business Analyst:<br>Roles, Skills, Salaries, Job Prospects</h2>
+        <hr>
+        <div class="box-footer">
+          <span class="date">May 2, 2023</span>
+          <div class="like">
+            <span class="like-icon"></span>
+            <span class="like-count">1.5 k</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxes">
+      <div class="news-pic">
+        <img src="Assets/pictures/Image-9.png" alt="">
+      </div>
+      <button class="close" id="closeArticle" onclick="articleRemove(event)"></button>
+      <div class="caption">
+        <button class="done" id="markAsread" onclick="readArticle(event)"></button>
+        <h2 class="headline">How much do Data Analyst make? 2023 Salary Guide</h2>
+        <hr>
+        <div class="box-footer">
+          <span class="date">May 2, 2023</span>
+          <div class="like">
+            <span class="like-icon"></span>
+            <span class="like-count">3.2 k</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div id="blog-link">
+      <h3 class="footer-title">BLOG</h3>
+      <ul class="footer-list">
+        <li class="list-item">Data Analyst</li>
+        <li class="list-item">Web Developer</li>
+      </ul>
+      <ul class="footer-list">
+        <li class="list-item">Career</li>
+        <li class="list-item">success Stories</li>
+        <li class="list-item">resume</li>
+      </ul>
+      <ul class="footer-list">
+        <li class="list-item">Hard Skills</li>
+        <li class="list-item">Soft Skills</li>
+        <br>
+      </ul>
+    </div>
+    
+    <div id="courses-links">
+      <h3 class="footer-title">OUR COURSES<h3>
+        <ul class="footer-list">
+          <li class="list-item">Data Analytics</li>
+          <li class="list-item">Web Development</li>
+        </ul>
+    </div>
+    <div id="social-links">
+      <h4>Follow Us On</h4>
+      <ul class="footer-list">
+        <li class="list-item"><a href=""><img src="Assets/icons/socials/icon_fb.svg" alt="Facebook link"></a></li>
+        <li class="list-item"><a href=""><img src="Assets/icons/socials/icon_in.svg" alt="Linked In link"></a></li>
+        <li class="list-item"><a href=""><img src="Assets/icons/socials/icon_insta.svg" alt="Instagram link"></a></li>
+        <li class="list-item"><a href=""><img src="Assets/icons/socials/icon_tiktok.svg" alt="Tiktok link"></a></li>
+        <li class="list-item"><a href=""><img src="Assets/icons/socials/icon_twitter.svg" alt="Twitter link"></a></li>
+        <li class="list-item"><a href=""><img src="Assets/icons/socials/icon_whatsup.svg" alt="Whatsup link"></a></li>
+        <li class="list-item"><a href=""><img src="Assets/icons/socials/icon_youtube.svg" alt="Youtube link"></a></li>
+      </ul>
+    </div>
+    <div id="legalities">
+      <h4>© Refocus Limited 2022</h4>
+      <ul class="footer-list">
+        <li class="list-item"><a href=""></a>Privacy Policy</li>
+        <li>.</li>
+        <li class="list-item"><a href=""></a>Terms of Use</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
